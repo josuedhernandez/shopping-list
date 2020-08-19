@@ -9,18 +9,18 @@ $(function() {
         // Apped new item with html format
         // Keep multiline to understand the format of the html text
         $('ul').append(
-            `<li><span class="shopping-item">${newItem}</span>` +
-            '<div class="shopping-item-controls">' +
-              '<button class="shopping-item-toggle">' +
-                '<span class="button-label">check</span>' +
-              '</button>' +
-              '<button class="shopping-item-delete">' +
-                '<span class="button-label">delete</span>' +
-              '</button>' +
-            '</div>' +
-         ' </li>'
+            `<li><span class="shopping-item">${newItem}</span>
+              <div class="shopping-item-controls">
+                <button class="shopping-item-toggle">
+                  <span class="button-label">check</span>
+                </button>
+                <button class="shopping-item-delete">
+                  <span class="button-label">delete</span>
+                </button>
+              </div>
+            </li>`
         );
-    });
+    })
     
     // Handle check toggle button
     $('ul').on('click', 'button.shopping-item-toggle', function(event) {
